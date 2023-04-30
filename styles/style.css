@@ -44,14 +44,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 
     background: #F1E4E6;
 }
 
+.top_photo {
+    max-width: 800px;
+}
+
 .top_items {
     display: flex;
-    margin: 290px 331px 381px 63px;
     gap: 16px;
 }
 
@@ -83,12 +86,14 @@ body {
 }
 
 .img {
-    max-width: 360px;
+    /*max-width: 360px;*/
     position: relative;
 }
 
 .img_big {
-    width: 1140px;
+    /*min-width: 768px;*/
+
+    /*max-width: 1140px;*/
     position: relative;
 }
 
@@ -110,8 +115,9 @@ body {
 
 .text_big {
     position: absolute;
-    left: 491px;
-    top: 65px;
+    left: calc(50% - 80px);
+    top: calc(50% - 25px);
+    text-align: center;
     color: #FFFFFF;
 }
 
@@ -199,11 +205,85 @@ body {
 .btn {
     padding: 15px 39px;
     border: 1px solid #FF6A6A;
-    max-width: 212px;
+    /*width: 212px;*/
 
 
     color: #F26376;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+}
+
+@media (max-width: 1024px) {
+    .top_items {
+        margin-left: 39px;
+    }
+
+    .top_photo {
+        max-width: 386px;
+    }
+
+    .top_label {
+        font-size: 24px;
+    }
+
+    .label_title {
+        font-size: 44px;
+    }
+
+    .categories {
+        gap: 19px;
+    }
+
+    .img {
+        /*max-width: 232px;*/
+
+    }
+
+    .img_big {
+        max-width: 736px;
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 8px);
+        padding-right: calc(50% - 8px);
+    }
+
+    .menu {
+        gap: 200px;
+        justify-content: center;
+    }
+
+    .top {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .top_photo {
+        display: none;
+    }
+
+    .menu_right_img-2 {
+        display: none;
+    }
+
+    .pink-line {
+        /*width: 12px;*/
+        /*height: 61px;*/
+    }
+
+    .top_label {
+        max-width: 236px;
+        font-size: 20px;
+    }
+
+    .label_title {
+        font-size: 38px;
+    }
+
+    /*.big-img {*/
+    /*    width: ;*/
+    /*}*/
 }
