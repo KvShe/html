@@ -218,6 +218,64 @@ body {
     line-height: 19px;
 }
 
+.info {
+    padding-top: 103px;
+    padding-bottom: 103px;
+    background: #222224;
+    display: flex;
+    gap: 30px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-img {
+    height: 40px;
+    margin-bottom: 19px;
+}
+
+.article-title {
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    color: #FBFBFB;
+}
+
+.article-text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #FBFBFB;
+}
+
+.under-bottom {
+    position: relative;
+}
+
+.under-bottom-item {
+    position: absolute;
+    top: 97px;
+}
+
+.under-bottom-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #222224;
+}
+
 @media (max-width: 1024px) {
     .top_items {
         margin-left: 39px;
